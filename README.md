@@ -57,31 +57,34 @@ Não. A diferença de renda mediana entre os grupos é pequena (R$ 5.400 vs. R$ 
 #### 5. Clientes sem informação de renda têm comportamento de risco diferente?
 Sim, e de forma contraintuitiva. Clientes que não informaram renda apresentaram menor taxa de inadimplência (5,6%) em comparação aos que informaram (6,9%), contrariando a hipótese inicial de maior risco nesse grupo.
 
+
 ## Recomendações de Negócio
 
-1. Segmentação por faixa etária no crédito
-
-Insight: clientes entre 18–30 anos apresentam inadimplência significativamente maior (11,7% vs. 2,3% em 70+).
+<strong>1. Segmentação por faixa etária no crédito</strong><br>
+Insight: clientes entre 18–30 anos apresentam inadimplência significativamente maior (11,7% vs. 2,3% em 70+).<br>
 Recomendação: aplicar políticas de crédito mais conservadoras para clientes até 30 anos, com limites iniciais mais baixos, maior rigor na aprovação e monitoramento mais próximo nos primeiros meses.
+</p>
 
-2. Monitoramento do uso do limite de crédito
-
-Insight: clientes inadimplentes utilizam, em média, 84% do limite disponível, contra 13% dos adimplentes.
+<p align="justify">
+<strong>2. Monitoramento do uso do limite de crédito</strong><br>
+Insight: clientes inadimplentes utilizam, em média, 84% do limite disponível, contra 13% dos adimplentes.<br>
 Recomendação: implementar monitoramento proativo com alertas automáticos para utilização acima de 60–70%, permitindo ações preventivas como revisão de limite e contato antecipado.
+</p>
 
-3. Gestão de clientes com histórico de atraso
-
-Insight: mesmo atrasos leves (30–59 dias) já estão associados a maior probabilidade de inadimplência futura.
+<p align="justify">
+<strong>3. Gestão de clientes com histórico de atraso</strong><br>
+Insight: mesmo atrasos leves (30–59 dias) já estão associados a maior probabilidade de inadimplência futura.<br>
 Recomendação: criar réguas de acompanhamento diferenciadas, com segmentação por histórico de atraso, contato antecipado e estratégias de renegociação preventiva.
+</p>
 
-4. Renda como variável secundária de risco
-
-Insight: a renda média entre adimplentes e inadimplentes é semelhante (R$ 5.400 vs. R$ 5.240).
+<p align="justify">
+<strong>4. Renda como variável secundária de risco</strong><br>
+Insight: a renda média entre adimplentes e inadimplentes é semelhante (R$ 5.400 vs. R$ 5.240).<br>
 Recomendação: reduzir o peso da renda nos modelos de crédito e priorizar variáveis comportamentais, como histórico de pagamento e uso do limite.
+</p>
 
-5. Revisão da exigência de comprovação de renda
-
-Insight: clientes que não informaram renda apresentaram menor inadimplência (5,6% vs. 6,9%).
+<p align="justify">
+<strong>5. Revisão da exigência de comprovação de renda</strong><br>
+Insight: clientes que não informaram renda apresentaram menor inadimplência (5,6% vs. 6,9%).<br>
 Recomendação: reavaliar políticas que penalizam a ausência de informação de renda e testar flexibilizações em ambiente controlado (como testes A/B) para validar possível viés no processo atual.
-
-
+</p>
