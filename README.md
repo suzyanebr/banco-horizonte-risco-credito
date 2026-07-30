@@ -21,18 +21,16 @@ Histórico de atrasos (30–59, 60–89 e 90+ dias)
 > **Nota metodológica:** a base não possui variáveis como credit score ou número de parcelas. Por isso, a análise foi conduzida com foco em variáveis comportamentais, como histórico de atrasos e utilização de crédito, que se mostraram mais relevantes para identificação de risco.
 
 ## Apresentação
-**Dashboard Interativo**
 
-A análise é apresentada em duas frentes
+### Dashboard Interativo
 
-O dashboard foi desenvolvido no Power BI com o objetivo de apresentar, de forma clara e interativa, os principais indicadores de risco da carteira de clientes.
+O dashboard foi desenvolvido no **Power BI** com o objetivo de apresentar, de forma clara e interativa, os principais indicadores de risco do perfil de clientes.
 
-<p align="center"> <img src="./assets/dashboard.png" alt="Dashboard Banco Horizonte"> </p>
+<p align="center">
+  <img width="1298" height="723" alt="Dashboard Banco Horizonte" src="https://github.com/user-attachments/assets/a642a4b0-3fb0-4103-a5f5-49a3f61df669" />
+</p>
 
- ## [Confira aqui o dashboard do projeto.](https://app.powerbi.com/view?r=eyJrIjoiYjBlYzk1NzAtZDI5OS00ZTBmLTg5NTYtZjZiYzAzMDU2NGI2IiwidCI6ImE2MDk0MDk0LWY1YjEtNDU3Yi1hODE3LTM2ZmNlOTFhYTQ3NSJ9)
-
-
-
+🔗 [Acesse o dashboard completo:](https://app.powerbi.com/view?r=eyJrIjoiYjBlYzk1NzAtZDI5OS00ZTBmLTg5NTYtZjZiYzAzMDU2NGI2IiwidCI6ImE2MDk0MDk0LWY1YjEtNDU3Yi1hODE3LTM2ZmNlOTFhYTQ3NSJ9)
 
 ### Notebook em Python
 
