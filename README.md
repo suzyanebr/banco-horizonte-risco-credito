@@ -6,7 +6,7 @@
 
 Este projeto realiza uma análise de risco de crédito para o Banco Horizonte (instituição fictícia), que enfrenta aumento na inadimplência em produtos como cartão de crédito e empréstimos pessoais.
 
-Para isso, foram utilizadas ferramentas de análise de dados e visualização: Python para limpeza, tratamento e análise exploratória dos dados, e Power BI para a construção de um dashboard estratégico com os principais indicadores de risco.
+Para isso, foi utilizado Python para limpeza, tratamento e análise exploratória dos dados, e Power BI para a visualização dos principais indicadores e compreensão geral do comportamento dos clientes.
 
 ## Conjunto de Dados
 
@@ -21,18 +21,18 @@ Histórico de atrasos (30–59, 60–89 e 90+ dias)
 > **Nota metodológica:** a base não possui variáveis como credit score ou número de parcelas. Por isso, a análise foi conduzida com foco em variáveis comportamentais, como histórico de atrasos e utilização de crédito, que se mostraram mais relevantes para identificação de risco.
 
 ## Apresentação
+**Dashboard Interativo**
 
-A análise é apresentada em duas frentes:
+A análise é apresentada em duas frentes
 
-### Dashboard Interativo
+O dashboard foi desenvolvido no Power BI com o objetivo de apresentar, de forma clara e interativa, os principais indicadores de risco da carteira de clientes.
 
-No dashboard encontram-se as principais métricas e indicadores que permitem uma compreensão rápida do perfil de risco da carteira de clientes.
+<p align="center"> <img src="./assets/dashboard.png" alt="Dashboard Banco Horizonte"> </p>
 
-<p align="center">
-  <img src="COLE_AQUI_O_LINK_DO_PRINT_DO_SEU_DASHBOARD" alt="Dashboard Banco Horizonte">
-</p>
+ ## [Confira aqui o dashboard do projeto.](https://app.powerbi.com/view?r=eyJrIjoiYjBlYzk1NzAtZDI5OS00ZTBmLTg5NTYtZjZiYzAzMDU2NGI2IiwidCI6ImE2MDk0MDk0LWY1YjEtNDU3Yi1hODE3LTM2ZmNlOTFhYTQ3NSJ9)
 
-### [Confira aqui o dashboard do projeto.](COLE_AQUI_O_LINK_DO_POWER_BI_PUBLICADO)
+
+
 
 ### Notebook em Python
 
