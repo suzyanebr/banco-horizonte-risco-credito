@@ -32,15 +32,15 @@ O dashboard foi desenvolvido no **Power BI** com o objetivo de apresentar, de fo
 
 🔗 [Acesse o dashboard completo:](https://app.powerbi.com/view?r=eyJrIjoiYjBlYzk1NzAtZDI5OS00ZTBmLTg5NTYtZjZiYzAzMDU2NGI2IiwidCI6ImE2MDk0MDk0LWY1YjEtNDU3Yi1hODE3LTM2ZmNlOTFhYTQ3NSJ9)
 
-### Notebook em Python
-
-O notebook (`Banco.ipynb`) contém todo o processo de limpeza dos dados, tratamento de valores nulos e a análise exploratória que fundamenta os achados do dashboard.
-
 ## Ferramentas
 
-Para a execução dessa análise, foram utilizadas as seguintes ferramentas:
-- **Python**: limpeza, tratamento de valores nulos e análise exploratória, utilizando as bibliotecas *Pandas*, *Matplotlib* e *Seaborn*. O passo a passo está demonstrado no arquivo `Banco.ipynb`.
-- **Microsoft Power BI**: construção do dashboard, com criação de colunas e medidas em **DAX** para as visualizações (faixa etária, taxa de inadimplência, status de pagamento, entre outras).
+## 🛠️ Ferramentas Utilizadas
+
+Para a execução desta análise, foram utilizadas as seguintes ferramentas:
+
+- **Python**: utilizado para limpeza, tratamento de valores nulos e análise exploratória dos dados, utilizando as bibliotecas *Pandas*, *Matplotlib* e *Seaborn*. O processo completo está documentado no arquivo `Banco.ipynb`.
+
+- **Microsoft Power BI**: utilizado para construção do dashboard estratégico, incluindo criação de colunas, medidas em **DAX** e visualizações para análise de faixa etária, taxa de inadimplência, status de pagamento e outros indicadores de risco.
 
 ## Perguntas de Negócio
 
@@ -61,26 +61,24 @@ Sim, mas de forma contraintuitiva: quem não informou a renda apresentou taxa de
 
 ## Recomendações de Negócio
 
-#### 🔴 1. Segmentação por faixa etária no crédito
+#### 1. Segmentação por faixa etária no crédito
 **Insight:** clientes entre 18–30 anos apresentam inadimplência significativamente maior (11,7% vs 2,3% em 70+).
 **Recomendação:** aplicar políticas de crédito mais conservadoras para clientes até 30 anos — limites iniciais mais baixos, maior rigor na aprovação e monitoramento mais próximo nos primeiros meses.
 
-#### 🔴 2. Monitoramento do uso do limite de crédito
+#### 2. Monitoramento do uso do limite de crédito
 **Insight:** clientes inadimplentes utilizam, em média, 84% do limite, contra 13% dos adimplentes.
 **Recomendação:** implementar monitoramento proativo, com alertas automáticos acima de 60–70% de uso, acionamento preventivo do time de relacionamento e revisão dinâmica de limites.
 
-#### 🔴 3. Gestão de clientes com histórico de atraso
+#### 3. Gestão de clientes com histórico de atraso
 **Insight:** mesmo atrasos leves (30–59 dias) já indicam maior probabilidade de reincidência.
 **Recomendação:** criar réguas de acompanhamento diferenciadas, com segmentação automática por histórico, contato antecipado antes de novos atrasos e estratégias de renegociação preventiva.
 
-#### 🟡 4. Renda como variável secundária de risco
+#### 4. Renda como variável secundária de risco
 **Insight:** a renda média entre adimplentes e inadimplentes é similar (R$ 5.400 vs R$ 5.240).
 **Recomendação:** reduzir o peso da renda no modelo de crédito e priorizar variáveis comportamentais, histórico de pagamento e uso de crédito.
 
-#### 🟡 5. Revisão da exigência de comprovação de renda
+#### 5. Revisão da exigência de comprovação de renda
 **Insight:** clientes que não informaram renda apresentaram inadimplência menor (5,6% vs 6,9%).
 **Recomendação:** reavaliar políticas atuais que penalizam quem não declara renda, testar flexibilização em ambientes controlados (A/B test) e validar se há viés no processo atual.
 
-## Autora
 
-Suzy Ane Brito de Oliveira — [LinkedIn](COLE_AQUI_O_LINK_DO_SEU_LINKEDIN) | [GitHub](https://github.com/suzyanebr)
