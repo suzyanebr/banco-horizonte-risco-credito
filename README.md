@@ -26,9 +26,7 @@ Histórico de atrasos (30–59, 60–89 e 90+ dias)
 
 O dashboard foi desenvolvido no **Power BI** com o objetivo de apresentar, de forma clara e interativa, os principais indicadores de risco do perfil de clientes.
 
-<p align="center">
-  <img width="1298" height="723" alt="Dashboard Banco Horizonte" src="https://github.com/user-attachments/assets/a642a4b0-3fb0-4103-a5f5-49a3f61df669" />
-</p>
+<img width="1171" height="642" alt="Image" src="https://github.com/user-attachments/assets/6908ee65-4c49-4003-80b4-92710617bb89" />
 
 🔗 [Acesse o dashboard completo:](https://app.powerbi.com/view?r=eyJrIjoiYjBlYzk1NzAtZDI5OS00ZTBmLTg5NTYtZjZiYzAzMDU2NGI2IiwidCI6ImE2MDk0MDk0LWY1YjEtNDU3Yi1hODE3LTM2ZmNlOTFhYTQ3NSJ9)
 
@@ -44,41 +42,46 @@ Para a execução desta análise, foram utilizadas as seguintes ferramentas:
 
 ## Perguntas de Negócio
 
-#### 1. Qual o perfil demográfico (idade, dependentes) do cliente inadimplente?
+#### 1. Qual o perfil demográfico do cliente inadimplente?
 Clientes inadimplentes são, em média, mais jovens (45,9 anos vs. 52,8 anos dos adimplentes). A inadimplência cai progressivamente com a idade, de 11,7% na faixa 18-30 anos até 2,3% em 70+.
 
 #### 2. O histórico de atrasos passados prevê inadimplência futura?
-Sim. Inadimplentes apresentam de 8,5x a 15x mais ocorrências de atraso, em todos os prazos analisados (30-59, 60-89 e 90+ dias), em relação aos adimplentes.
+Sim. Clientes inadimplentes apresentam entre 8,5x e 15x mais ocorrências de atraso, considerando todos os prazos analisados (30–59, 60–89 e 90+ dias), em comparação aos adimplentes.
 
 #### 3. O uso do limite de crédito disponível está associado a maior risco?
-Sim, e é o indicador mais forte da base: inadimplentes utilizam, em mediana, **84%** do limite disponível, contra apenas **13%** dos adimplentes.
+Sim, sendo o indicador mais relevante da análise. Clientes inadimplentes utilizam, em mediana, 84% do limite disponível, enquanto clientes adimplentes utilizam apenas 13%.
 
 #### 4. A renda mensal, isoladamente, é um bom preditor de inadimplência?
-Não. A diferença de renda mediana entre os grupos é pequena (R$ 5.400 vs. R$ 5.240), indicando que o risco está mais ligado ao comportamento de uso do crédito do que ao nível de renda em si.
+Não. A diferença de renda mediana entre os grupos é pequena (R$ 5.400 vs. R$ 5.240), indicando que o risco está mais relacionado ao comportamento de uso do crédito do que ao nível de renda.
 
 #### 5. Clientes sem informação de renda têm comportamento de risco diferente?
-Sim, mas de forma contraintuitiva: quem não informou a renda apresentou taxa de inadimplência **menor** (5,6%) do que quem informou (6,9%) — resultado que contraria a hipótese inicial de que omitir a renda seria um sinal de risco.
+Sim, e de forma contraintuitiva. Clientes que não informaram renda apresentaram menor taxa de inadimplência (5,6%) em comparação aos que informaram (6,9%), contrariando a hipótese inicial de maior risco nesse grupo.
 
 ## Recomendações de Negócio
 
-#### 1. Segmentação por faixa etária no crédito
-**Insight:** clientes entre 18–30 anos apresentam inadimplência significativamente maior (11,7% vs 2,3% em 70+).
-**Recomendação:** aplicar políticas de crédito mais conservadoras para clientes até 30 anos — limites iniciais mais baixos, maior rigor na aprovação e monitoramento mais próximo nos primeiros meses.
+1. Segmentação por faixa etária no crédito
 
-#### 2. Monitoramento do uso do limite de crédito
-**Insight:** clientes inadimplentes utilizam, em média, 84% do limite, contra 13% dos adimplentes.
-**Recomendação:** implementar monitoramento proativo, com alertas automáticos acima de 60–70% de uso, acionamento preventivo do time de relacionamento e revisão dinâmica de limites.
+Insight: clientes entre 18–30 anos apresentam inadimplência significativamente maior (11,7% vs. 2,3% em 70+).
+Recomendação: aplicar políticas de crédito mais conservadoras para clientes até 30 anos, com limites iniciais mais baixos, maior rigor na aprovação e monitoramento mais próximo nos primeiros meses.
 
-#### 3. Gestão de clientes com histórico de atraso
-**Insight:** mesmo atrasos leves (30–59 dias) já indicam maior probabilidade de reincidência.
-**Recomendação:** criar réguas de acompanhamento diferenciadas, com segmentação automática por histórico, contato antecipado antes de novos atrasos e estratégias de renegociação preventiva.
+2. Monitoramento do uso do limite de crédito
 
-#### 4. Renda como variável secundária de risco
-**Insight:** a renda média entre adimplentes e inadimplentes é similar (R$ 5.400 vs R$ 5.240).
-**Recomendação:** reduzir o peso da renda no modelo de crédito e priorizar variáveis comportamentais, histórico de pagamento e uso de crédito.
+Insight: clientes inadimplentes utilizam, em média, 84% do limite disponível, contra 13% dos adimplentes.
+Recomendação: implementar monitoramento proativo com alertas automáticos para utilização acima de 60–70%, permitindo ações preventivas como revisão de limite e contato antecipado.
 
-#### 5. Revisão da exigência de comprovação de renda
-**Insight:** clientes que não informaram renda apresentaram inadimplência menor (5,6% vs 6,9%).
-**Recomendação:** reavaliar políticas atuais que penalizam quem não declara renda, testar flexibilização em ambientes controlados (A/B test) e validar se há viés no processo atual.
+3. Gestão de clientes com histórico de atraso
+
+Insight: mesmo atrasos leves (30–59 dias) já estão associados a maior probabilidade de inadimplência futura.
+Recomendação: criar réguas de acompanhamento diferenciadas, com segmentação por histórico de atraso, contato antecipado e estratégias de renegociação preventiva.
+
+4. Renda como variável secundária de risco
+
+Insight: a renda média entre adimplentes e inadimplentes é semelhante (R$ 5.400 vs. R$ 5.240).
+Recomendação: reduzir o peso da renda nos modelos de crédito e priorizar variáveis comportamentais, como histórico de pagamento e uso do limite.
+
+5. Revisão da exigência de comprovação de renda
+
+Insight: clientes que não informaram renda apresentaram menor inadimplência (5,6% vs. 6,9%).
+Recomendação: reavaliar políticas que penalizam a ausência de informação de renda e testar flexibilizações em ambiente controlado (como testes A/B) para validar possível viés no processo atual.
 
 
