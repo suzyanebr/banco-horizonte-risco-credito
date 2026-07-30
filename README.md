@@ -3,8 +3,11 @@
 <p align="center">
 <img width="1774" height="887" alt="Image" src="https://github.com/user-attachments/assets/cd785c1f-934f-4e3a-8e2e-1186e76842a6" />
 </p>
+
 <p align="justify">
 Este projeto realiza uma análise de risco de crédito para o Banco Horizonte (instituição fictícia), que enfrenta aumento na inadimplência em produtos como cartão de crédito e empréstimos pessoais.
+</p>
+
 <p align="justify">
 Para isso, foi utilizado Python para limpeza, tratamento e análise exploratória dos dados, e Power BI para a visualização dos principais indicadores e compreensão geral do comportamento dos clientes.
 </p>
