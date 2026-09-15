@@ -33,9 +33,13 @@ Foi utilizado o dataset público <strong><a href="https://www.kaggle.com/c/GiveM
 
 O dashboard foi desenvolvido no **Power BI** com o objetivo de apresentar, de forma clara e interativa, os principais indicadores de risco do perfil de clientes.
 
-<img width="1171" height="642" alt="Image" src="https://github.com/user-attachments/assets/6908ee65-4c49-4003-80b4-92710617bb89" />
+<div align="center"> <img width="1171" height="642" alt="Image" src="https://github.com/user-attachments/assets/6908ee65-4c49-4003-80b4-92710617bb89" />
 
 🔗 [Acesse o dashboard completo:](https://app.powerbi.com/view?r=eyJrIjoiYjBlYzk1NzAtZDI5OS00ZTBmLTg5NTYtZjZiYzAzMDU2NGI2IiwidCI6ImE2MDk0MDk0LWY1YjEtNDU3Yi1hODE3LTM2ZmNlOTFhYTQ3NSJ9)
+
+</div>
+
+<br>
 
 ##  Ferramentas Utilizadas
 
