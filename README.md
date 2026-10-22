@@ -14,7 +14,7 @@ Para isso, foi utilizado Python para limpeza, tratamento e análise exploratóri
 
 ## Conjunto de Dados
 <p align="justify">
-Foi utilizado o dataset público <strong><a href="https://www.kaggle.com/c/GiveMeSomeCredit">Give Me Some Credit</a></strong> (Kaggle), contendo aproximadamente 150.000 registros de clientes, com variáveis relacionadas ao perfil demográfico e comportamento financeiro, como:
+Foi utilizado o dataset público <strong><a href="https://www.kaggle.com/c/GiveMeSomeCredit">Give Me Some Credit</a></strong> (Kaggle), contendo exatamente 150.000 registros de clientes, com variáveis relacionadas ao perfil demográfico e comportamento financeiro, como:
 </p>
 
 <ul>
@@ -41,36 +41,36 @@ O dashboard foi desenvolvido no **Power BI** com o objetivo de apresentar, de fo
 
 <br>
 
-##  Ferramentas Utilizadas
+## Ferramentas Utilizadas
 
 Para a execução desta análise, foram utilizadas as seguintes ferramentas:
 
-- **Python**: utilizado para limpeza, tratamento de valores nulos e análise exploratória dos dados, utilizando as bibliotecas *Pandas*, *Matplotlib* e *Seaborn*. O processo completo está documentado no arquivo `Banco.ipynb`.
+- **Python**: utilizado para limpeza, tratamento de valores nulos e análise exploratória dos dados, utilizando as bibliotecas *Pandas*, *Matplotlib* e *Seaborn*. O processo completo está documentado no arquivo `analise_risco_credito.ipynb`.
 
 - **Microsoft Power BI**: utilizado para construção do dashboard estratégico, incluindo criação de colunas, medidas em **DAX** e visualizações para análise de faixa etária, taxa de inadimplência, status de pagamento e outros indicadores de risco.
 
 ## Perguntas de Negócio
 
 #### 1. Qual o perfil demográfico do cliente inadimplente?
-Clientes inadimplentes são, em média, mais jovens (45,9 anos vs. 52,8 anos dos adimplentes). A inadimplência cai progressivamente com a idade, de 11,7% na faixa 18-30 anos até 2,3% em 70+.
+Clientes inadimplentes são, em média, 7 anos mais jovens (46 anos vs. 53 anos dos adimplentes). A inadimplência cai progressivamente com a idade, de 12% na faixa 18–30 anos até 2% em 70+.
 
 #### 2. O histórico de atrasos passados prevê inadimplência futura?
-Sim. Clientes inadimplentes apresentam entre 8,5x e 15x mais ocorrências de atraso, considerando todos os prazos analisados (30–59, 60–89 e 90+ dias), em comparação aos adimplentes.
+Sim. Atrasos mais longos concentram a inadimplência. Para atrasos de 90+ dias, há 20.968 ocorrências entre inadimplentes contra 18.928 entre adimplentes.
 
 #### 3. O uso do limite de crédito disponível está associado a maior risco?
 Sim, sendo o indicador mais relevante da análise. Clientes inadimplentes utilizam, em mediana, 84% do limite disponível, enquanto clientes adimplentes utilizam apenas 13%.
 
 #### 4. A renda mensal, isoladamente, é um bom preditor de inadimplência?
-Não. A diferença de renda mediana entre os grupos é pequena (R$ 5.400 vs. R$ 5.240), indicando que o risco está mais relacionado ao comportamento de uso do crédito do que ao nível de renda.
+Não. A diferença de renda mediana entre os grupos é mínima (R$ 5.400 adimplentes vs. R$ 5.240 inadimplentes), indicando que o risco está mais relacionado ao comportamento de uso do crédito do que ao nível de renda.
 
 #### 5. Clientes sem informação de renda têm comportamento de risco diferente?
-Sim, e de forma contraintuitiva. Clientes que não informaram renda apresentaram menor taxa de inadimplência (5,6%) em comparação aos que informaram (6,9%), contrariando a hipótese inicial de maior risco nesse grupo.
+Sim. Clientes que informaram a renda apresentaram maior taxa de inadimplência (7%) em comparação aos que não informaram (6%).
 
 ## Recomendações de Negócio
 
 <p align="justify">
 <strong>1. Segmentação por faixa etária no crédito</strong><br>
-Insight: clientes entre 18–30 anos apresentam inadimplência significativamente maior (11,7% vs. 2,3% em 70+).<br>
+Insight: clientes entre 18–30 anos apresentam inadimplência significativamente maior (12% vs. 2% em 70+).<br>
 Recomendação: aplicar políticas de crédito mais conservadoras para clientes até 30 anos, com limites iniciais mais baixos, maior rigor na aprovação e monitoramento mais próximo nos primeiros meses.
 </p>
 
@@ -82,7 +82,7 @@ Recomendação: implementar monitoramento proativo com alertas automáticos para
 
 <p align="justify">
 <strong>3. Gestão de clientes com histórico de atraso</strong><br>
-Insight: mesmo atrasos leves (30–59 dias) já estão associados a maior probabilidade de inadimplência futura.<br>
+Insight: atrasos longos (especialmente acima de 90 dias) concentram o maior volume de inadimplentes.<br>
 Recomendação: criar réguas de acompanhamento diferenciadas, com segmentação por histórico de atraso, contato antecipado e estratégias de renegociação preventiva.
 </p>
 
@@ -94,6 +94,6 @@ Recomendação: reduzir o peso da renda nos modelos de crédito e priorizar vari
 
 <p align="justify">
 <strong>5. Revisão da exigência de comprovação de renda</strong><br>
-Insight: clientes que não informaram renda apresentaram menor inadimplência (5,6% vs. 6,9%).<br>
-Recomendação: reavaliar políticas que penalizam a ausência de informação de renda e testar flexibilizações em ambiente controlado. Como o dado histórico é observacional, a validação deve ser feita por meio de um teste controlado, comparando a política atual com uma abordagem alternativa que não penalize esse grupo. O experimento deve medir impacto na inadimplência, taxa de aprovação e rentabilidade ao longo do tempo, permitindo identificar possível viés no processo atual.
+Insight: clientes que informaram renda apresentaram maior taxa de inadimplência (7% vs. 6%).<br>
+Recomendação: reavaliar políticas que penalizam a ausência de informação de renda e testar flexibilizações em ambiente controlado. Como o dado histórico é observacional, a validação deve ser feita por meio de um teste controlado, comparando a política atual com uma abordagem alternativa que não penalize esse grupo.
 </p>
