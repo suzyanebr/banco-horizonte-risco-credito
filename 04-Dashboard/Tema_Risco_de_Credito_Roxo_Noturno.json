@@ -1,0 +1,52 @@
+{
+  "name": "Risco de Crédito - Roxo Noturno",
+  "dataColors": [
+    "#8B3DFF",
+    "#B58AFF",
+    "#6124C7",
+    "#8987A8",
+    "#A78BFA",
+    "#D7C7FF",
+    "#FF4568",
+    "#2ED17A",
+    "#F2B84B",
+    "#48C6D9"
+  ],
+  "background": "#0D0D1C",
+  "foreground": "#F5F3FF",
+  "tableAccent": "#8B3DFF",
+  "good": "#2ED17A",
+  "neutral": "#F2B84B",
+  "bad": "#FF4568",
+  "maximum": "#8B3DFF",
+  "center": "#B58AFF",
+  "minimum": "#6124C7",
+  "null": "#343052",
+  "firstLevelElements": "#F5F3FF",
+  "secondLevelElements": "#C4C1D8",
+  "thirdLevelElements": "#8987A8",
+  "fourthLevelElements": "#343052",
+  "secondaryBackground": "#171729",
+  "textClasses": {
+    "callout": {
+      "fontSize": 32,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F5F3FF"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F5F3FF"
+    },
+    "header": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F5F3FF"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#C4C1D8"
+    }
+  }
+}
